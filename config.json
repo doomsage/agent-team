@@ -1,0 +1,13 @@
+{
+  "groq_base_url": "https://api.groq.com/openai/v1",
+  "ollama_base_url": "http://localhost:11434/v1",
+  "models": {
+    "planner":  {"provider": "groq",   "model": "openai/gpt-oss-120b"},
+    "coder":    {"provider": "groq",   "model": "openai/gpt-oss-120b"},
+    "reviewer": {"provider": "ollama", "model": "qwen2.5:3b"},
+    "memory":   {"provider": "ollama", "model": "qwen2.5:3b"}
+  },
+  "agents_enabled": ["planner", "coder", "tester", "memory"],
+  "max_fix_rounds": 2,
+  "style_guide": "Premium dark theme (near-black background like #0a0a0f, subtle gradient accents, one accent color), modern sans-serif font (Google Fonts: Inter, Poppins or Space Grotesk), smooth scroll-linked animations (parallax / elements sliding with scroll, not just fade-in), mobile-first responsive, all visible text in English only, small 'made by doomsage' footer at the bottom unless the user asks to skip it. No external image URLs; use CSS gradients, shapes and emoji/SVG instead."
+}
